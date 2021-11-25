@@ -1,0 +1,279 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\pepij\\source\\repos\\Solitaire-S2\\Solitaire-S2\\Solitaire-S2.csproj": {}
+  },
+  "projects": {
+    "C:\\s2-solitaire\\Solitaire\\SolitaireDataAccessLayer\\SolitaireDataAccessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\s2-solitaire\\Solitaire\\SolitaireDataAccessLayer\\SolitaireDataAccessLayer.csproj",
+        "projectName": "SolitaireDataAccessLayer",
+        "projectPath": "C:\\s2-solitaire\\Solitaire\\SolitaireDataAccessLayer\\SolitaireDataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\pepij\\.nuget\\packages\\",
+        "outputPath": "C:\\s2-solitaire\\Solitaire\\SolitaireDataAccessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pepij\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\s2-solitaire\\Solitaire\\SolitaireInterfaceLayer\\SolitaireInterfaceLayer.csproj": {
+                "projectPath": "C:\\s2-solitaire\\Solitaire\\SolitaireInterfaceLayer\\SolitaireInterfaceLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\s2-solitaire\\Solitaire\\SolitaireInterfaceLayer\\SolitaireInterfaceLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\s2-solitaire\\Solitaire\\SolitaireInterfaceLayer\\SolitaireInterfaceLayer.csproj",
+        "projectName": "SolitaireInterfaceLayer",
+        "projectPath": "C:\\s2-solitaire\\Solitaire\\SolitaireInterfaceLayer\\SolitaireInterfaceLayer.csproj",
+        "packagesPath": "C:\\Users\\pepij\\.nuget\\packages\\",
+        "outputPath": "C:\\s2-solitaire\\Solitaire\\SolitaireInterfaceLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pepij\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\s2-solitaire\\Solitaire\\SolitaireLogicLayer\\SolitaireLogicLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\s2-solitaire\\Solitaire\\SolitaireLogicLayer\\SolitaireLogicLayer.csproj",
+        "projectName": "SolitaireLogicLayer",
+        "projectPath": "C:\\s2-solitaire\\Solitaire\\SolitaireLogicLayer\\SolitaireLogicLayer.csproj",
+        "packagesPath": "C:\\Users\\pepij\\.nuget\\packages\\",
+        "outputPath": "C:\\s2-solitaire\\Solitaire\\SolitaireLogicLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pepij\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\s2-solitaire\\Solitaire\\SolitaireInterfaceLayer\\SolitaireInterfaceLayer.csproj": {
+                "projectPath": "C:\\s2-solitaire\\Solitaire\\SolitaireInterfaceLayer\\SolitaireInterfaceLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pepij\\source\\repos\\Solitaire-S2\\Solitaire-S2\\Solitaire-S2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pepij\\source\\repos\\Solitaire-S2\\Solitaire-S2\\Solitaire-S2.csproj",
+        "projectName": "Solitaire-S2",
+        "projectPath": "C:\\Users\\pepij\\source\\repos\\Solitaire-S2\\Solitaire-S2\\Solitaire-S2.csproj",
+        "packagesPath": "C:\\Users\\pepij\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pepij\\source\\repos\\Solitaire-S2\\Solitaire-S2\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pepij\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\s2-solitaire\\Solitaire\\SolitaireDataAccessLayer\\SolitaireDataAccessLayer.csproj": {
+                "projectPath": "C:\\s2-solitaire\\Solitaire\\SolitaireDataAccessLayer\\SolitaireDataAccessLayer.csproj"
+              },
+              "C:\\s2-solitaire\\Solitaire\\SolitaireInterfaceLayer\\SolitaireInterfaceLayer.csproj": {
+                "projectPath": "C:\\s2-solitaire\\Solitaire\\SolitaireInterfaceLayer\\SolitaireInterfaceLayer.csproj"
+              },
+              "C:\\s2-solitaire\\Solitaire\\SolitaireLogicLayer\\SolitaireLogicLayer.csproj": {
+                "projectPath": "C:\\s2-solitaire\\Solitaire\\SolitaireLogicLayer\\SolitaireLogicLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

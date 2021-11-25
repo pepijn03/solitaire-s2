@@ -1,0 +1,219 @@
+﻿
+@{
+    ViewData["Title"] = "Game page";
+}
+@model SolitaireLogicLayer.GameBoard;
+<head> 
+<link rel="stylesheet" href="~/css/site.css" />    
+</head>
+
+
+@{int cardcount = 0;}
+
+<div class="site_wrap">
+<div class="container">
+    <div class="row">
+        <div class="col-1">
+            <img onclick="NextCard()" src="../properties/cardback.png" />
+            <button onclick="NextCard()" class="btn btn-primary"></button>
+        </div> 
+
+
+        <div class="col-1">
+          <div class="card">
+            <div class="card-body">
+                <p>@Model.stacks[0].cards[cardcount].value @Model.stacks[0].cards[cardcount].type </p>
+              </div>
+            </div>
+<table class="table mt-3 table-striped">
+            <thead class="thead-light opacity-8">
+                <tr>
+                    <th scope="col">color</th>
+                    <th scope="col">kind</th>
+                    <th scope="col">value</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <th scope="row">@Model.stacks[0].cards[cardcount].color</th>
+                        <td>@Model.stacks[0].cards[cardcount].type</td>
+                        <td>@Model.stacks[0].cards[cardcount].value</td>
+                    </tr>
+            </tbody>
+        </table>
+
+        </div>
+</div>
+
+
+
+
+    <div class="depot1">
+        <table class="table mt-3 table-striped">
+            <thead class="thead-light opacity-8">
+                <tr>
+                    <th scope="col">color</th>
+                    <th scope="col">kind</th>
+                    <th scope="col">value</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.stacks[1].cards)
+                {
+                    <tr>
+                        <th scope="row">@item.color</th>
+                        <td>@item.type</td>
+                        <td>@item.value</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="depot2">
+        <table class="table mt-3 table-striped">
+            <thead class="thead-light opacity-8">
+                <tr>
+                    <th scope="col">color</th>
+                    <th scope="col">kind</th>
+                    <th scope="col">value</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.stacks[2].cards)
+                {
+                    <tr>
+                        <th scope="row">@item.color</th>
+                        <td>@item.type</td>
+                        <td>@item.value</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="depot3">
+        <table class="table mt-3 table-striped">
+            <thead class="thead-light opacity-8">
+                <tr>
+                    <th scope="col">color</th>
+                    <th scope="col">kind</th>
+                    <th scope="col">value</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.stacks[3].cards)
+                {
+                    <tr>
+                        <th scope="row">@item.color</th>
+                        <td>@item.type</td>
+                        <td>@item.value</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="depot4">
+        <table class="table mt-3 table-striped">
+            <thead class="thead-light opacity-8">
+                <tr>
+                    <th scope="col">color</th>
+                    <th scope="col">kind</th>
+                    <th scope="col">value</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.stacks[4].cards)
+                {
+                    <tr>
+                        <th scope="row">@item.color</th>
+                        <td>@item.type</td>
+                        <td>@item.value</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="depot5">
+        <table class="table mt-3 table-striped">
+            <thead class="thead-light opacity-8">
+                <tr>
+                    <th scope="col">color</th>
+                    <th scope="col">kind</th>
+                    <th scope="col">value</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.stacks[5].cards)
+                {
+                    <tr>
+                        <th scope="row">@item.color</th>
+                        <td>@item.type</td>
+                        <td>@item.value</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="depot6">
+        <table class="table mt-3 table-striped">
+            <thead class="thead-light opacity-8">
+                <tr>
+                    <th scope="col">color</th>
+                    <th scope="col">kind</th>
+                    <th scope="col">value</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.stacks[6].cards)
+                {
+                    <tr>
+                        <th scope="row">@item.color</th>
+                        <td>@item.type</td>
+                        <td>@item.value</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="depot2">
+        <table class="table mt-3 table-striped">
+            <thead class="thead-light opacity-8">
+                <tr>
+                    <th scope="col">color</th>
+                    <th scope="col">kind</th>
+                    <th scope="col">value</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.stacks[7].cards)
+                {
+                    <tr>
+                        <th scope="row">@item.color</th>
+                        <td>@item.type</td>
+                        <td>@item.value</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>    
+</div>
+
+<script>
+    var cards = @Html.Raw(ViewData["cards"]);
+    countcard = 0;
+    NextCard = function () {
+        countcard++;
+        if (countcard > cards.length) {
+            countcard = 0;
+        }
+        document.getElementById("Color").innerHTML = cards.cards[countcard]["color"];
+        document.getElementById("Type").innerHTML = cards.cards[countcard]["type"];
+        document.getElementById("Value").innerHTML = cards.cards[countcard]["value"];
+    }
+</script>
