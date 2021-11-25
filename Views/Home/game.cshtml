@@ -209,7 +209,7 @@
     countcard = 0;
     NextCard = function () {
         countcard++;
-        if (countcard > cards.length) {
+        if (countcard > 52) {
             countcard = 0;
         }
         document.getElementById("Color").innerHTML = cards.cards[countcard]["color"];

@@ -19,11 +19,13 @@ namespace Solitaire_S2.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly User user;
-        private readonly IUserContainerDAL userDal;
-        private UserContainer userContainer = new UserContainer();
+        private IUserContainerDAL userDal;
+        private UserContainer userContainer;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IUserContainerDAL userInterface)
         {
+            userDal = userInterface;
+
             _logger = logger;
         }
 
